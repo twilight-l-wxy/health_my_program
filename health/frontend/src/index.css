@@ -1,0 +1,67 @@
+/* 全局样式 */
+:root {
+  --primary-color: #1890ff;
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+  --error-color: #f5222d;
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 特性卡片样式 */
+.feature-card {
+  padding: 24px;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  transition: all 0.3s;
+  width: 30%;
+}
+
+.feature-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+}
+
+.feature-card h2 {
+  margin: 16px 0;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.feature-card p {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .feature-card {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
